@@ -1,0 +1,28 @@
+2025-07-14 17:32:48,232 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-07-14 17:32:48,233 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-07-14 17:32:48,233 - news_fetcher - INFO - Scheduler configured: Fetch every 2h, Cleanup daily at 00:00
+2025-07-14 17:32:48,364 - main - INFO - Starting News API application...
+2025-07-14 17:32:48,367 - apscheduler.scheduler - INFO - Added job "Fetch News from API" to job store "default"
+2025-07-14 17:32:48,368 - apscheduler.scheduler - INFO - Added job "Cleanup Old Articles" to job store "default"
+2025-07-14 17:32:48,368 - apscheduler.scheduler - INFO - Scheduler started
+2025-07-14 17:32:48,369 - news_fetcher - INFO - News fetcher scheduler started successfully
+2025-07-14 17:32:48,369 - news_fetcher - INFO - Starting news fetch and store process
+2025-07-14 17:32:48,369 - news_fetcher - INFO - Fetching news from API (attempt 1/3)
+2025-07-14 17:32:50,935 - news_fetcher - INFO - Successfully fetched news data in 2.24s
+2025-07-14 17:32:50,942 - news_fetcher - INFO - Successfully parsed 100 articles
+2025-07-14 17:32:50,948 - news_fetcher - INFO - Successfully stored 100 articles in database
+2025-07-14 17:32:50,950 - news_fetcher - INFO - Database stats: {'total_articles': 100, 'latest_article_date': '2025-07-14 12:02:50', 'oldest_article_date': '2025-07-14 12:02:50', 'recent_api_calls_24h': 1, 'retention_days': 3}
+2025-07-14 17:32:50,950 - main - INFO - News API application started successfully
+2025-07-14 23:42:48,660 - apscheduler.executors.default - WARNING - Run time of job "Fetch News from API (trigger: interval[2:00:00], next run at: 2025-07-14 19:32:48 IST)" was missed by 0:10:00.427187
+2025-07-15 00:00:00,016 - apscheduler.executors.default - INFO - Running job "Cleanup Old Articles (trigger: cron[hour='0', minute='0'], next run at: 2025-07-16 00:00:00 IST)" (scheduled at 2025-07-15 00:00:00+05:30)
+2025-07-15 00:00:00,017 - news_fetcher - INFO - Starting database cleanup process
+2025-07-15 00:00:00,023 - news_fetcher - INFO - Cleanup completed: 0 old articles removed
+2025-07-15 00:00:00,024 - apscheduler.executors.default - INFO - Job "Cleanup Old Articles (trigger: cron[hour='0', minute='0'], next run at: 2025-07-16 00:00:00 IST)" executed successfully
+2025-07-15 01:32:48,245 - apscheduler.executors.default - INFO - Running job "Fetch News from API (trigger: interval[2:00:00], next run at: 2025-07-15 03:32:48 IST)" (scheduled at 2025-07-15 01:32:48.232453+05:30)
+2025-07-15 01:32:48,247 - news_fetcher - INFO - Starting news fetch and store process
+2025-07-15 01:32:48,247 - news_fetcher - INFO - Fetching news from API (attempt 1/3)
+2025-07-15 01:32:50,416 - news_fetcher - INFO - Successfully fetched news data in 2.02s
+2025-07-15 01:32:50,426 - news_fetcher - INFO - Successfully parsed 82 articles
+2025-07-15 01:32:50,435 - news_fetcher - INFO - Successfully stored 82 articles in database
+2025-07-15 01:32:50,437 - news_fetcher - INFO - Database stats: {'total_articles': 170, 'latest_article_date': '2025-07-14 20:02:50', 'oldest_article_date': '2025-07-14 12:02:50', 'recent_api_calls_24h': 2, 'retention_days': 3}
+2025-07-15 01:32:50,438 - apscheduler.executors.default - INFO - Job "Fetch News from API (trigger: interval[2:00:00], next run at: 2025-07-15 03:32:48 IST)" executed successfully
